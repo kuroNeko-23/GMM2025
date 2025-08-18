@@ -31,6 +31,11 @@ public class SanityBarScript : MonoBehaviour
     {
         slider.value = Mathf.Clamp(slider.value + amount, 0, slider.maxValue);
     }
+    
+    public void ReduceSanityRate(float amount)
+    {
+        decreaseRate = Mathf.Clamp(decreaseRate - amount, 0, 100f);
+    }
 }
 
 
