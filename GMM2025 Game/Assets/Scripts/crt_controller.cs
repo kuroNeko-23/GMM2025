@@ -16,7 +16,7 @@ public class crt_controller : MonoBehaviour
     private float maxLenDistortionIntensity;
 
     [SerializeField, Range(0f, 1f)]
-    private float intensity = 0f;
+    public float intensity = 0f;
 
 
     void Start()
