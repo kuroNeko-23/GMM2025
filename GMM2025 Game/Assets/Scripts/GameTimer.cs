@@ -9,6 +9,9 @@ public class GameTimer : MonoBehaviour
     [SerializeField] private int startHour = 0;       // starting hour
     [SerializeField] private int endHour = 6;         // ending hour
 
+    [Header("Game Over Reference")]
+    public GameOverScript gameOverScript;
+
     private float currentTime = 0f;
 
     void Update()
@@ -19,6 +22,11 @@ public class GameTimer : MonoBehaviour
             if (currentTime > playTime) currentTime = playTime;
 
             UpdateTimerUI();
+        }
+        else
+        {
+            //Debug.Log("Time is up!");
+            gameOverScript.GameOver();
         }
     }
 

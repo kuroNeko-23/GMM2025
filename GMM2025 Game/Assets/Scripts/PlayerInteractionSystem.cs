@@ -25,9 +25,11 @@ public class PlayerInteractionSystem : MonoBehaviour
                 {
                     sanityBarScript.IncreaseSanity(10f/ 100f);
                     Debug.Log("Prop object detected: " + hitObj.name);
+                    Destroy(hitObj);
                 }
                 else if (tag == "PropToDestroy")
                 {
+                    sanityBarScript.IncreaseSanity(10f/ 100f);
                     Debug.Log("PropToDestroy object detected: " + hitObj.name);
                     Destroy(hitObj);
                 }

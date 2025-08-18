@@ -121,5 +121,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b651c799ba82340b4fb0af46225231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reduceRateAmount: 5
+  reduceRateAmount: 3
   sanityBarScript: {fileID: 0}
